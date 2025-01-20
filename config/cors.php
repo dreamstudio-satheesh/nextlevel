@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'paths' => ['api/*'],
+    'paths' => ['api/*','https://api.themoviedb.org/*'],
 
     'allowed_methods' => ['*'],
 
