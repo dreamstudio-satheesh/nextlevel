@@ -6,8 +6,11 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
     <title>{!! Session::get('app_name') !!}</title>
-    <link rel='shortcut icon' type='image/x-icon' href="{{ asset('assets/img/favicon.png') }}" style="width: 2px !important;" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href="{{ asset('assets/img/favicon.png') }}"
+        style="width: 2px !important;" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('assets/bundles/sweetalert/css/sweetalert.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/selectric.css') }}" type="text/css" />
     <link rel="stylesheet" href="{{ asset('assets/css/quill.css') }}" />
@@ -40,7 +43,8 @@
                 </div>
                 <ul class="navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                        <a href="#" data-toggle="dropdown"
+                            class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                             <span class="profile-btn">
                                 <i data-feather="user"></i>
                             </span>
@@ -174,8 +178,9 @@
         </div>
     </div>
 
-    <input type="hidden" value="{{ env('APP_URL')}}" id="appUrl">
-    <input type="hidden" value="{{ env('TMDB_API_KEY')}}" id="TMDB_API_KEY">
+    <input type="hidden" value="{{ env('APP_URL', 'https://nextlevel.servcp.com/') }}" id="appUrl">
+    <input type="hidden" value="{{ env('TMDB_API_KEY', '9afd11ee5ba04451e438462c252a34ed') }}" id="TMDB_API_KEY">
+
 
     <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
     <script src="{{ asset('assets/js/jquery-3.6.0.min.js') }}"></script>
@@ -212,7 +217,8 @@
     @yield('script')
 
     <!-- videoPreviewModal -->
-    <div class="modal fade" id="videoPreviewModal" tabindex="-1" aria-labelledby="videoPreviewModalLabel" aria-hidden="true">
+    <div class="modal fade" id="videoPreviewModal" tabindex="-1" aria-labelledby="videoPreviewModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="videoPreview">
