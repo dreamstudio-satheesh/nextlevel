@@ -195,6 +195,7 @@
                             <div class="checkbox-slider d-flex align-items-center justify-content-between">
                                 <span class="me-3">
                                     {{ __('Hetzner S3') }}
+                                   
                                 <label>
                                     <input type="radio" class="d-none" name="storage_type" value="3"
                                         id="hetznerRadio" {{ $setting->storage_type == 3 ? 'checked' : '' }}>
