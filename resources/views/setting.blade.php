@@ -179,9 +179,7 @@
                             <div class="checkbox-slider d-flex align-items-center justify-content-between">
                                 <span class="me-3">
                                     {{ __('digital Ocean') }}
-                                    <br>
-                                    <span id="doNote" class="text-danger"> {{ __('pleaseAddValuesInEnvFile') }}
-                                    </span>
+                                   
                                 </span>
                                 <label>
                                     <input type="radio" class="d-none" name="storage_type" value="2"
@@ -197,10 +195,6 @@
                             <div class="checkbox-slider d-flex align-items-center justify-content-between">
                                 <span class="me-3">
                                     {{ __('Hetzner S3') }}
-                                    <br>
-                                    <span id="hetznerNote"
-                                        class="text-danger d-none">{{ __('pleaseAddValuesInEnvFile') }}</span>
-                                </span>
                                 <label>
                                     <input type="radio" class="d-none" name="storage_type" value="3"
                                         id="hetznerRadio" {{ $setting->storage_type == 3 ? 'checked' : '' }}>
