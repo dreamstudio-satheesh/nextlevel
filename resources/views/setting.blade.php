@@ -178,7 +178,7 @@
                         <div class="card w-auto p-3">
                             <div class="checkbox-slider d-flex align-items-center justify-content-between">
                                 <span class="me-3">
-                                    {{ __('digitalOceanSpace') }}
+                                    {{ __('digital Ocean') }}
                                     <br>
                                     <span id="doNote" class="text-danger"> {{ __('pleaseAddValuesInEnvFile') }}
                                     </span>
