@@ -127,6 +127,7 @@ class GlobalFunction extends Model
         $storageConfig = [
             1 => ['disk' => 's3', 'base_url' => env('ITEM_BASE_URL')],
             2 => ['disk' => 'digitalocean', 'base_url' => env('DO_SPACE_URL')],
+            3 => ['disk' => 'hetzner', 'base_url' => env('HETZNER_S3_URL')],  // Hetzner Cloud S3
         ];
 
         $storageDisk = $storageConfig[$storageType]['disk'] ?? 'public';

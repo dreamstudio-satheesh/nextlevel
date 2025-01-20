@@ -62,8 +62,16 @@ class SettingController extends Controller
             'DO_SPACE_REGION' => env('DO_SPACE_REGION'),
             'DO_SPACE_BUCKET' => env('DO_SPACE_BUCKET')
         ];
-
-        return view('setting', compact('setting', 'awsConfig', 'doConfig'));
+        
+        $hetznerConfig = [
+            'HETZNER_S3_ACCESS_KEY_ID' => env('HETZNER_S3_ACCESS_KEY_ID'),
+            'HETZNER_S3_SECRET_ACCESS_KEY' => env('HETZNER_S3_SECRET_ACCESS_KEY'),
+            'HETZNER_S3_REGION' => env('HETZNER_S3_REGION'),
+            'HETZNER_S3_BUCKET' => env('HETZNER_S3_BUCKET'),
+            'HETZNER_S3_ENDPOINT' => env('HETZNER_S3_ENDPOINT')
+        ];
+    
+        return view('setting', compact('setting', 'awsConfig', 'doConfig', 'hetznerConfig'));
     }
     
     function fetchSettings()

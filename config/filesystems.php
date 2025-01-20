@@ -66,6 +66,17 @@ return [
             'visibility' => 'public',
         ],
 
+        'hetzner' => [
+            'driver' => 's3',
+            'key' => env('HETZNER_S3_ACCESS_KEY_ID'),
+            'secret' => env('HETZNER_S3_SECRET_ACCESS_KEY'),
+            'region' => env('HETZNER_S3_REGION'),
+            'bucket' => env('HETZNER_S3_BUCKET'),
+            'endpoint' => env('HETZNER_S3_ENDPOINT'),
+            'url' => env('HETZNER_S3_URL'),
+            'use_path_style_endpoint' => true,  // Hetzner requires path-style endpoints
+        ],
+
     ],
 
     /*
